@@ -20,8 +20,10 @@ for i = 1:length(addr)
 end
 
 currFilePath = fileparts(mfilename('fullpath'));
-addrFileName = fullfile(currFilePath,'addresses.docx');
-document.SaveAs2(addrFileName);
+addrDocxFileName = fullfile(currFilePath,'Addresses.docx');
+addrPdfFileName = fullfile(currFilePath,'Addresses.pdf');
+document.SaveAs2(addrDocxFileName);
+document.SaveAs2(addrPdfFileName,17);
 word.Quit;
 
 function pageBreak(selection)
