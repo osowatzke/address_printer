@@ -1,4 +1,4 @@
-function s = load_addresses
+function s = loadAddresses
     C = readcell('Addresses.xlsx');
     C = C(3:end,:);
     s = {};
