@@ -1,4 +1,4 @@
-function printTextboxAddress(textbox, addr)
+function printTextboxAddress(selection, addr)
     fontSel = cellfun(@(x) any(regexp(x,'[0-9]')), addr.name);
     fontSel = any(fontSel);
     if fontSel
